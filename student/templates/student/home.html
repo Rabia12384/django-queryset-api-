@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+</head>
+<body>
+    <h1>Information</h1>
+    <table border="1px">
+    <th>ID</th>
+    <th>Name</th>
+    <th>Roll</th>
+    <th>City</th>
+    <th>Marks</th>
+    <th>Passing Year</th>
+    {% for data in all_data %}
+    <tr>
+        <td>{{ data.id }}</td>
+        <td>{{ data.name }}</td>
+        <td>{{ data.roll }}</td>
+        <td>{{ data.city }}</td>
+        <td>{{ data.marks }}</td>
+        <td>{{ data.pass_date }}</td>
+    </tr>
+    {% endfor %}
+   </table>
+</body>
+</html>
